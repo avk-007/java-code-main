@@ -1,4 +1,4 @@
-package basics;
+package basics1to2;
 
 public class main {
 
