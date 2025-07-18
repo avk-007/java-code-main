@@ -1,0 +1,20 @@
+//stringf immuatable it means if defined one string then you couldnt m,odify.every time you will assign some value to it,i
+it will create new string
+//use string for constant values because string are lught weight and therefore improve performance
+
+
+String str="inerview"; -->interview
+//create new String
+str=str+"abhi"  -->interview abhi
+-----------------------------------------
+//mutable -stringbuilder is mutable  it means if you defined one string then you can modify it
+ and new string is not created
+ //use when concatenating or modify strings frequently
+
+ ex:
+StringBuilder sb=new StringBuilder("abhishek");
+
+//modifies the existing
+//Stringbuilder object
+sb.append("kumar)
+__> abhishek kumar

@@ -1,0 +1,40 @@
+ability to a fuction to take on multiple forms
+
+eg multyiple forms of methods of same name function
+add(int a,int b) ,add(double a,double b),add(int a,int b,int c) etc
+
+runtime polymoprph --static/earlt binding ==method overloading
+
+/*method overloading in java rewffered as compile time poly. or early binding bcz the decison of which
+method to call happens at compile time based on method signatuire method paramaters before the program executed*/
+
+
+compile polymoprph==dynamic/late binding  ==method overriding
+
+** methods be overloaded ways
+1.method name should be same but different paramters
+2.method name should be same but different data types
+3.method name same,data types of parameters are same but the order pararmerts is different
+
+
+if methods have diff return type then are methods are oveerloaded??
+no,compile error
+
+public class hello{
+
+    public int add (int a ,int b){
+        return a+b;
+    }
+    public double add (int  a ,int  b){
+        return a+b;
+    }
+
+    //compile errors
+
+}
+
+
+----------------------------------
+
+method overriding-in java allows a subclass to provide a specific implemenation of a method that is alrady
+defined in its superclass
