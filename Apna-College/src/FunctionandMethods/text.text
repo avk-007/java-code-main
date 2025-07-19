@@ -1,0 +1,5 @@
+returnType functionName(type arg1,typearg2..){
+//operations
+}
+//void no return.
+//type arg==in6t ,bool3ean ,floaty,double.
