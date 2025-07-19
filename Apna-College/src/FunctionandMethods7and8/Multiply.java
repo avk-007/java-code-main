@@ -1,4 +1,4 @@
-package FunctionandMethods;
+package FunctionandMethods7and8;
 import java.util.Scanner;
     public class Multiply {
 

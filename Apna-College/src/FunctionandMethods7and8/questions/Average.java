@@ -1,8 +1,7 @@
-package FunctionandMethods.questions;
+package FunctionandMethods7and8.questions;
 //Enter 3 numbers from the user & make a function to print their average.
 
 import java.util.Scanner;
-import java.util.concurrent.SynchronousQueue;
 
 public class Average {
     public static void main(String[] args) {
