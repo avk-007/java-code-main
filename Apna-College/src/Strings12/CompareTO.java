@@ -1,4 +1,4 @@
-package Strings13;
+package Strings12;
 
 public class CompareTO {
     public static void main(String[] args) {

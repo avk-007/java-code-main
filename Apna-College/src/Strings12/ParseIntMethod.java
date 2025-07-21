@@ -1,4 +1,4 @@
-package Strings13;
+package Strings12;
 /*ParseInt Method of Integer class*/
 public class ParseIntMethod {
     public static void main(String[] args) {

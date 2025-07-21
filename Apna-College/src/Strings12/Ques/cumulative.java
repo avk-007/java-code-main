@@ -1,4 +1,4 @@
-package Strings13.Ques;
+package Strings12.Ques;
 
 import java.util.Scanner;
 
