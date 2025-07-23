@@ -1,0 +1,10 @@
+left shift n<<i ,2<<1 ,010<<1,100
+right shift :001
+
+positive current:1
+negative current:0
+
+get Bit:
+set Bit:
+clear bit
+update bit:
