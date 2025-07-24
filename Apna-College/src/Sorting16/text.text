@@ -1,0 +1,126 @@
+===============================
+Sorting Algorithms in Java
+===============================
+
+----------------------------------
+1. Bubble Sort
+----------------------------------
+Idea:
+ - Compare each pair of adjacent elements.
+ - If arr[i] > arr[i+1], swap them.
+ - Repeat the process N-1 times to place elements in their correct positions.
+
+Time Complexity: O(N^2)
+
+Code:
+----------------------------------
+import java.util.*;
+
+class BubbleSortExample {
+    public static void printArray(int arr[]) {
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String args[]) {
+        int arr[] = {7, 8, 1, 3, 2};
+
+        // Bubble sort
+        for(int i = 0; i < arr.length - 1; i++) {
+            for(int j = 0; j < arr.length - i - 1; j++) {
+                if(arr[j] > arr[j + 1]) {
+                    // Swap arr[j] and arr[j+1]
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        printArray(arr);
+    }
+}
+
+----------------------------------
+2. Selection Sort
+----------------------------------
+Idea:
+ - Find the minimum element in the unsorted array.
+ - Swap it with the element at the current position.
+ - Place each element in its correct sorted position.
+
+Time Complexity: O(N^2)
+
+Code:
+----------------------------------
+import java.util.*;
+
+class SelectionSortExample {
+    public static void printArray(int arr[]) {
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String args[]) {
+        int arr[] = {7, 8, 1, 3, 2};
+
+        // Selection sort
+        for(int i = 0; i < arr.length - 1; i++) {
+            int smallest = i;
+            for(int j = i + 1; j < arr.length; j++) {
+                if(arr[j] < arr[smallest]) {
+                    smallest = j;
+                }
+            }
+            // Swap arr[i] and arr[smallest]
+            int temp = arr[smallest];
+            arr[smallest] = arr[i];
+            arr[i] = temp;
+        }
+
+        printArray(arr);
+    }
+}
+
+----------------------------------
+3. Insertion Sort
+----------------------------------
+Idea:
+ - Pick elements from the unsorted part one by one.
+ - Insert them at the correct position in the sorted part.
+ - Shift elements as needed.
+
+Time Complexity: O(N^2)
+
+Code:
+----------------------------------
+import java.util.*;
+class InsertionSortExample {
+    public static void printArray(int arr[]) {
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String args[]) {
+        int arr[] = {7, 8, 1, 3, 2};
+
+        // Insertion sort
+        for(int i = 1; i < arr.length; i++) {
+            int current = arr[i];
+            int j = i - 1;
+            while(j >= 0 && arr[j] > current) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+            arr[j + 1] = current;
+        }
+        printArray(arr);
+    }
+}
+-------------------- END --------------------
