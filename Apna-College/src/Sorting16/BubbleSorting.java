@@ -1,6 +1,6 @@
 package Sorting16;
 
-//bubble sort :: eg bubble ,we pick the element and push to last and vice versa,and it will create ascending order.
+//bubble sort :: ex bubble ,we pick the element and push to last and vice versa,and it will create ascending order.
 //used for asc desc,or you can refer sort in ecommerce website
 /*
 Idea:

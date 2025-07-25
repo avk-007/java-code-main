@@ -22,6 +22,16 @@ public class SelectionSort {
 
         for(int i = 0; i < arr.length - 1; i++) {
             //selection sort sortest to highest.
+            int smallest=i;
+            for (int j=1+1;j<arr.length;j++){
+                if (arr[j]<arr[smallest]){
+                    smallest=j;
+                }
+            }
+            //swap arr[i] and arr[smallest]
+            int temp=arr[smallest];
+            arr[smallest]=arr[i];
+            arr[i]=temp;
         }
 
         printArray(arr);
